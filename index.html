@@ -142,7 +142,47 @@
         </div>
       </div>
     </section>
+    <!-- Contact Form -->
+    <section class="contact container" id="contact">
+      <!-- Heading -->
+      <h2 class="heading">Contact</h2>
+      <!-- Contact Form -->
+      <form action="" class="contact-form" id="contact-form">
+        <input type="text" placeholder="Your Name" class="name" required />
+        <input
+          type="email"
+          name=""
+          id=""
+          placeholder="Email address..."
+          class="email"
+          required
+        />
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Write message here..."
+          class="message"
+          required
+        ></textarea>
+        <input type="submit" value="Send" class="send-btn" />
+      </form>
+    </section>
 
+    <!-- Email JS link -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <!-- Sweet alert JS link -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="text/javascript">
+      (function () {
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init("fH0g1qJkQYItqeONk");
+      })();
+    </script>
     <!-- link to js-->
     <script src="js/main.js"></script>
   </body>
