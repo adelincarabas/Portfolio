@@ -11,6 +11,7 @@ function validate() {
   let msg = document.querySelector(".message");
   let sendBtn = document.querySelector(".send-btn");
 
+  
   sendBtn.addEventListener("click", (e) => {
     e.preventDefault();
     if (name.value == "" || email.value == "" || msg.value == "") {
